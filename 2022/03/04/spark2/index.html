@@ -183,7 +183,7 @@
       </div>
       <div class="markdown-body">
         <p>Spark系统是基于Scala语言构建的，因此除了Java之外，也需要安装一下Scala。</p>
-<p>安装Scala其实也很简单，值得注意的是安装的Scala版本并非版本越新越好，而要考虑是否与安装的Java版本和计划安装的Spark版本相兼容，不然可能会在之后出现各种问题，让自己觉得自己是个🤡。</p>
+<p>安装Scala其实也很简单，值得注意的是安装的Scala版本并非版本越新越好，而要考虑是否与安装的Java版本和计划安装的Spark版本相兼容，不然可能会在之后出现各种问题。</p>
 <p>目前最新的spark版本为3.2.x，一般来说对应安装2.12.x版本的Scala。</p>
 <blockquote>
 <p>摘自<a target="_blank" rel="noopener" href="https://spark.apache.org/docs/latest/index.html">spark官方文档</a>的一段话：</p>
@@ -225,13 +225,13 @@
 </tr>
 </tbody></table>
 <p>本文综合了自己安装的jdk版本（jdk8和jdk11），又考虑到上表以及官方文档内的说明，同时，又根据Spark官网下载的集成了Hadoop与Scala的Spark压缩包内jar文件夹里的Scala版本，最终决定安装2.12.15版本的Scala。</p>
-<p>没错，Spark官网提供集成了依赖环境的安装包，等于是自己不用再安装Scala和Hadoop就能直接用Spark了，至福🤤。然而出于学习整体架构的需要，还是得自己手动安装和配置Scala和Hadoop😢。</p>
-<p>接下来就是愉快的安装流程了捏😋。</p>
+<p>没错，Spark官网提供集成了依赖环境的安装包，等于是自己不用再安装Scala和Hadoop就能直接用Spark了，至福。然而出于学习整体架构的需要，还是自己手动安装和配置Scala和Hadoop。</p>
+<p>接下来就是愉快的安装流程了。</p>
 <p>至Scala官网下载安装包，一般是tgz压缩包格式，将此压缩包解压至想安装的的路径即可。</p>
 <p>解压及重命名代码可见下例（在终端中输入，注意解压命令里的压缩包路径按实际情况来，至于解压的目的路径，本文选择&#x2F;usr&#x2F;local文件夹。别忘了这些安装路径，之后可能还会用到）：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo tar -zxf ~/Desktop/scala-2.12.15.tgz -C /usr/local</span><br><span class="line">cd /usr/local/</span><br><span class="line">sudo mv ./scala-2.12.15/ ./scala</span><br></pre></td></tr></table></figure>
 
-<p>别忘了添加环境变量😆。以Ubuntu系统为例，修改<del>&#x2F;.bashrc文件；如果是Manjaro系统，由于默认的终端为zsh而非bash，需要修改</del>&#x2F;.zshrc文件。总之，添加以下这一行：</p>
+<p>别忘了添加环境变量。以Ubuntu系统为例，修改<del>&#x2F;.bashrc文件；如果是Manjaro系统，由于默认的终端为zsh而非bash，需要修改</del>&#x2F;.zshrc文件。总之，添加以下这一行：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">export PATH=$PATH:/usr/local/scala/bin</span><br></pre></td></tr></table></figure>
 
 <p>修改之后，更新一下配置文件。在终端中输入：</p>

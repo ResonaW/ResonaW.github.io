@@ -182,7 +182,7 @@
             
       </div>
       <div class="markdown-body">
-        <p>决定了安装的版本后（见上文），就是愉快的安装环节喽😋。</p>
+        <p>决定了安装的版本后（见上文），就是愉快的安装环节了。</p>
 <p>但在开始安装Hadoop前，参考教程，发现还有几个准备工作需要完成。</p>
 <p>第一步，在Linux系统中添加hadoop用户。</p>
 <p>以下流程均以Ubuntu系统为例。其他发行版类似操作，略微调整即可。打开终端输入：</p>
@@ -206,9 +206,9 @@
 <p>经过上述操作后，查看教程发现下一步是安装Java。好在之前已经安装，然而当我在终端中输入java -version时，我惊奇的发现终端告诉我它找不到（结果如下）：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">Command &#x27;java&#x27; not found, but can be installed with:</span><br><span class="line"></span><br><span class="line">sudo apt install openjdk-11-jre-headless  # version 11.0.13+8-0ubuntu1~20.04, or</span><br><span class="line">sudo apt install default-jre              # version 2:1.11-72</span><br><span class="line">sudo apt install openjdk-13-jre-headless  # version 13.0.7+5-0ubuntu1~20.04</span><br><span class="line">sudo apt install openjdk-16-jre-headless  # version 16.0.1+9-1~20.04</span><br><span class="line">sudo apt install openjdk-17-jre-headless  # version 17.0.1+12-1~20.04</span><br><span class="line">sudo apt install openjdk-8-jre-headless   # version 8u312-b07-0ubuntu1~20.04</span><br></pre></td></tr></table></figure>
 
-<p>可把我整乐了😅。</p>
+<p>可把我整乐了。</p>
 <p>输入vim ~&#x2F;.bashrc，拉到最底下一看，原来是因为在hadoop用户的bash配置文件里没有Java的环境变量，加上即可（环境变量可参考之前Java安装一文）。</p>
-<p>至此，安装Hadoop前的准备工作完成了🥰。</p>
+<p>至此，安装Hadoop前的准备工作完成了。</p>
 <p>但仔细想想还没有。之前还安装过Scala，需要给hadoop用户操作权限（虽然不清楚这一步是否必需，还是弄一下比较好）。打开之前Scala安装的目录，输入下列代码即可：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd /usr/local</span><br><span class="line">sudo chown -R hadoop ./scala</span><br></pre></td></tr></table></figure>
 

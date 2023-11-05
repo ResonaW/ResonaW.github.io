@@ -210,14 +210,14 @@
 <p>正当我这么想的时候，输出报错了😨：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Starting namenodes on [localhost]</span><br><span class="line">localhost: ERROR: JAVA_HOME is not set and could not be found.</span><br><span class="line">Starting datanodes</span><br><span class="line">localhost: ERROR: JAVA_HOME is not set and could not be found.</span><br><span class="line">Starting secondary namenodes [ubuntu]</span><br><span class="line">ubuntu: ERROR: JAVA_HOME is not set and could not be found.</span><br></pre></td></tr></table></figure>
 
-<p>怎么回事，我不是在~&#x2F;.bashrc文件里配置过Java环境变量了吗😰？</p>
+<p>怎么回事，我不是在~&#x2F;.bashrc文件里配置过Java环境变量了吗？</p>
 <p>于是开始检查，输入</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">echo $JAVA_HOME</span><br></pre></td></tr></table></figure>
 
 <p>返回结果：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/usr/lib/jdk1.8.0_301</span><br></pre></td></tr></table></figure>
 
-<p>啊这🤡。于是又回去查教程，教程叫我修改Hadoop的环境变量文件。</p>
+<p>啊这。于是又回去查教程，教程叫我修改Hadoop的环境变量文件。</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd /usr/local/hadoop/etc/hadoop</span><br><span class="line">vim hadoop-env.sh</span><br></pre></td></tr></table></figure>
 
 <p>将里面有一行# export JAVA_HOME&#x3D;，改成下面的内容（即修改成自己的安装路径）：</p>
@@ -255,8 +255,8 @@
 
 <p>当然，现在什么文件都没有上传，这个命令也不会有任何返回。</p>
 <p>另外，参考教程，在启动Hadoop服务后，我们可以在浏览器中输入localhost:50070查看信息。</p>
-<p>当然，如果你在输入了之后浏览器告诉你无法访问，也是正常的，因为我也打不开🤡。怎么回事呢？</p>
-<p>弄了半天也没头绪，最后查了一下，原来是Hadoop改端口号了🤭。教程里的Hadoop版本是2.7.1，而本次安装的版本为3.3.1。因此，实际上应该输入localhost:9870才是正确的端口号。</p>
+<p>当然，如果你在输入了之后浏览器告诉你无法访问，也是正常的，因为我也打不开。怎么回事呢？</p>
+<p>弄了半天也没头绪，最后查了一下，原来是Hadoop改端口号了。教程里的Hadoop版本是2.7.1，而本次安装的版本为3.3.1。因此，实际上应该输入localhost:9870才是正确的端口号。</p>
 <p>最后是关闭Hadoop服务。在终端中输入：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">stop-dfs.sh</span><br></pre></td></tr></table></figure>
 

@@ -182,8 +182,8 @@
             
       </div>
       <div class="markdown-body">
-        <p>本来以为这个系列应该就不更新了，毕竟也没人看🤣。其实主要是学到Spark那里时忘记做记录了，装好了之后也不知道有啥要记录的了。</p>
-<p>不过想不到最近又要安装Spark系统了，但是也懒得一张张截图记录步骤了，就直接贴个自己看的教程😋。也顺便做个备份（上次装好就把教程删了，这回找了好久😥）。</p>
+        <p>本来以为这个系列应该就不更新了。其实主要是学到Spark那里时忘记做记录了，装好了之后也不知道有啥要记录的了。</p>
+<p>不过想不到最近又要安装Spark系统了，但是也懒得一张张截图记录步骤了，就直接贴个自己看的教程，也顺便做个备份。</p>
 <p>因为之前装了Hadoop，即Spark是安装在之前Hadoop的基础上的，所以在下载安装包时要选择Pre-build with user-provided Hadoop，也就是像spark-3.2.1-bin-without-hadoop.tgz这种。</p>
 <p>下面是Local模式（单机模式）的 Spark安装流程。（默认用户为hadoop）。</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">sudo tar -zxf ~/Download/spark-3.2.1-bin-without-hadoop.tgz -C /usr/local</span><br><span class="line">cd /usr/local</span><br><span class="line">sudo mv ./spark-3.2.1-bin-without-hadoop/ ./spark</span><br><span class="line">sudo chown -R hadoop:hadoop ./spark</span><br></pre></td></tr></table></figure>

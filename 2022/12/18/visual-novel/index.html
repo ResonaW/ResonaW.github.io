@@ -181,12 +181,12 @@
 <p>——因为山就在那里。</p>
 </blockquote>
 <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>突然想看视觉小说。众所周知，Windows是浏览视觉小说的最佳方式，但我现在用的电脑装的是Linux，exe程序是跑不起来的。这就很苦恼。</p>
-<p>如果看到这里的你不明所以，问我视觉小说到底是什么？我也不好说，这就是一种分类，有很多别称，你也可以叫它文字冒险游戏（ADV）等等。当然这些名称的具体含义实际上多少有些差别，但怎么叫都无所谓，只是我习惯叫这个罢了。</p>
+<p>如果看到这里的你不明所以，问我视觉小说（VN）到底是什么？我也不好说，这就是一种分类，有很多别称，你也可以叫它ADV等。当然这些名称的具体含义实际上多少有些差别，但怎么叫都无所谓，只是我习惯叫这个罢了。</p>
 <p>言归正传，Linux到底能不能跑视觉小说？经过我一天的研究，得出的结论是：能跑，但只能跑一点点。😥</p>
 <h3 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h3><p>1.装虚拟机+Windows。我没试过。</p>
 <p>2.ONScripter类模拟器+ONS移植游戏。试了一下，我的评价是PC端还是别用了。</p>
 <p>3.使用wine。</p>
-<p>本机使用的Linux发行版为Arch Linux，所以使用pacman包管理，其他发行版改下命令应该就行了。安装wine-staging版以及相关库（64位以及32位）。我也不知道这些库是否必装，如果想节省空间可以先只装wine。</p>
+<p>本机使用的Linux发行版为Arch Linux，所以使用pacman包管理，其他发行版改下命令应该就行了。安装wine-staging版以及相关库（64位以及32位）。这些库并非都是必装，如果想节省空间可以先只装wine。</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo pacman -S wine-mono wine_gecko wine-staging giflib lib32-giflib libpng lib32-libpng libldap lib32-libldap gnutls lib32-gnutls mpg123 lib32-mpg123 openal lib32-openal v4l-utils lib32-v4l-utils libpulse lib32-libpulse libgpg-error lib32-libgpg-error alsa-plugins lib32-alsa-plugins alsa-lib lib32-alsa-lib libjpeg-turbo lib32-libjpeg-turbo sqlite lib32-sqlite libxcomposite lib32-libxcomposite libxinerama lib32-libgcrypt libgcrypt lib32-libxinerama ncurses lib32-ncurses opencl-icd-loader lib32-opencl-icd-loader libxslt lib32-libxslt libva lib32-libva gtk3 lib32-gtk3 gst-plugins-base-libs lib32-gst-plugins-base-libs vulkan-icd-loader lib32-vulkan-icd-loader</span><br></pre></td></tr></table></figure>
 
 <p>我安装的版本信息如下（使用sudo pacman -Qs ^wine-命令可查看）：</p>

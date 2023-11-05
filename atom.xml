@@ -6,7 +6,7 @@
   <link href="https://blog.sora.homes/atom.xml" rel="self"/>
   
   <link href="https://blog.sora.homes/"/>
-  <updated>2023-07-24T08:35:19.000Z</updated>
+  <updated>2023-11-01T01:28:44.000Z</updated>
   <id>https://blog.sora.homes/</id>
   
   <author>
@@ -15,6 +15,62 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>与Bug搏斗的夜晚......</title>
+    <link href="https://blog.sora.homes/2023/11/01/comment-problem/"/>
+    <id>https://blog.sora.homes/2023/11/01/comment-problem/</id>
+    <published>2023-11-01T01:28:44.000Z</published>
+    <updated>2023-11-01T01:28:44.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;高端的食材，往往只需要最朴素的烹饪方式。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;起因&quot;&gt;&lt;a href=&quot;#起因&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="笔记" scheme="https://blog.sora.homes/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="博客" scheme="https://blog.sora.homes/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>记博客的迁移</title>
+    <link href="https://blog.sora.homes/2023/10/31/migrate/"/>
+    <id>https://blog.sora.homes/2023/10/31/migrate/</id>
+    <published>2023-10-31T15:06:37.000Z</published>
+    <updated>2023-10-31T15:06:37.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;把大象装进冰箱要几步？&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;起因&quot;&gt;&lt;a href=&quot;#起因&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="笔记" scheme="https://blog.sora.homes/categories/%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="博客" scheme="https://blog.sora.homes/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+  </entry>
   
   <entry>
     <title>杂记 2023年3-6月辑</title>
@@ -104,8 +160,7 @@
       
         
         
-    <summary type="html">&lt;h3 id=&quot;20221203&quot;&gt;&lt;a href=&quot;#20221203&quot; class=&quot;headerlink&quot; title=&quot;20221203&quot;&gt;&lt;/a&gt;20221203&lt;/h3&gt;&lt;p&gt;18：00了，我晚饭呢？&lt;/p&gt;
-&lt;h3 id=&quot;20221204&quot;&gt;&lt;a</summary>
+    <summary type="html">&lt;h3 id=&quot;20221204&quot;&gt;&lt;a href=&quot;#20221204&quot; class=&quot;headerlink&quot; title=&quot;20221204&quot;&gt;&lt;/a&gt;20221204&lt;/h3&gt;&lt;p&gt;很没干劲啊，明明事情一堆的。看CLANNAD AFTER</summary>
         
       
     
@@ -187,7 +242,7 @@
         
     <summary type="html">&lt;p&gt;忽闻辉夜姬漫画已完结，连夜看完。&lt;/p&gt;
 &lt;p&gt;所以现在是11号凌晨，或许也能说是10号？应该不行，还是得算11号。大半夜的头脑也发昏了吗，绝对是看这漫画的缘故。光棍节看恋爱喜剧，岂不美哉，岂不妙哉？真不失为人生一大乐事😭。&lt;/p&gt;
-&lt;p&gt;上次看的时候，还只是炒面part</summary>
+&lt;p&gt;上次看的时候，还是炒面party</summary>
         
       
     
@@ -212,8 +267,9 @@
       
         
         
-    <summary type="html">&lt;p&gt;本来以为这个系列应该就不更新了，毕竟也没人看🤣。其实主要是学到Spark那里时忘记做记录了，装好了之后也不知道有啥要记录的了。&lt;/p&gt;
-&lt;p&gt;不过想不到最近又要安装Spark系统了，但是也懒得一张张截图记录步骤了，就直接贴个自己看的教程😋。也顺便做个备份（上次装好就把教</summary>
+    <summary type="html">&lt;p&gt;本来以为这个系列应该就不更新了。其实主要是学到Spark那里时忘记做记录了，装好了之后也不知道有啥要记录的了。&lt;/p&gt;
+&lt;p&gt;不过想不到最近又要安装Spark系统了，但是也懒得一张张截图记录步骤了，就直接贴个自己看的教程，也顺便做个备份。&lt;/p&gt;
+&lt;p&gt;因为之前装了Hado</summary>
         
       
     
@@ -240,7 +296,7 @@
       
         
         
-    <summary type="html">&lt;p&gt;按照本次学习的教程，之后是进行HBase的安装和配置。（怎么感觉这一系列的名称应该改成“Hadoop学习记录”？好奇怪。🤔）&lt;/p&gt;
+    <summary type="html">&lt;p&gt;按照本次学习的教程，之后是进行HBase的安装和配置。（怎么感觉这一系列的名称应该改成“Hadoop安装记录”？好奇怪。🤔）&lt;/p&gt;
 &lt;p&gt;和之前各软件的安装一样，进入HBase安装包的下载路径，打开终端输入：&lt;/p&gt;
 &lt;figure class=&quot;highlight</summary>
         
@@ -297,10 +353,10 @@
       
         
         
-    <summary type="html">&lt;p&gt;决定了安装的版本后（见上文），就是愉快的安装环节喽😋。&lt;/p&gt;
+    <summary type="html">&lt;p&gt;决定了安装的版本后（见上文），就是愉快的安装环节了。&lt;/p&gt;
 &lt;p&gt;但在开始安装Hadoop前，参考教程，发现还有几个准备工作需要完成。&lt;/p&gt;
 &lt;p&gt;第一步，在Linux系统中添加hadoop用户。&lt;/p&gt;
-&lt;p&gt;以下流程均以Ubuntu系统为例。其他发行版类似操作，</summary>
+&lt;p&gt;以下流程均以Ubuntu系统为例。其他发行版类似操作，略微</summary>
         
       
     
@@ -327,7 +383,7 @@
       
         
         
-    <summary type="html">&lt;p&gt;安装完Java和Scala后，接下来就要进入Hadoop与Spark系统的搭建了。&lt;/p&gt;
+    <summary type="html">&lt;p&gt;安装完Java和Scala后，接下来就要进行Hadoop与Spark系统的搭建了。&lt;/p&gt;
 &lt;p&gt;但是重要的问题出现了，各环境之间的兼容性需要仔细考虑一下，不然可能会引起后续很多问题。本次学习参考的教程Hadoop的最新版本还是2.7.1，这个时候就很可怕了——之前计划安装</summary>
         
       
